@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background changes</title>
+    <style>
+        body{
+            margin:0px;
+            padding :20px 100px;
+        }
+        h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+        img{
+            width:100%;
+            height:auto;
+            margin: 0 auto;
+            border:10px solid red;
+            background-color: blue;
+        }
+        p{
+            font-size: 18px;
+            text-align: justify;
+        }
+        .btn{
+            width:20px;
+            height:20px;
+            display: inline-block;
+            border:solid grey 2px;
+            border-radius: 50%;
+            cursor:pointer;
+            float:right;
+            margin:-4px;
+        }
+        .btn:hover{
+            width:30px;
+            height:30px;
+        }
+        #white{
+            background-color: white;
+        }
+        #aqua{
+            background-color: aqua;
+        }
+        #voilet{
+            background-color: violet;
+        }
+        #black{
+            background-color: black;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="color-switcher">
+        <span class="btn" id="white" onclick="changeBG('#ffffff')"></span>
+        <span class="btn" id="aqua" onclick="changeBG('#7fffd4')"></span>
+        <span class="btn" id="voilet" onclick="changeBG('#ce9aff')"></span>
+        <span class="btn" id="black" onclick="changeBG('#000000')"></span>
+    </div>
+    <h1 class="para">About us</h1>
+    <img id="hi" src="download.jpg" alt="">
+    <p class="para">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis officiis ea natus suscipit cumque ad maxime possimus animi fugit ducimus ipsa, cum asperiores id sit facere, facilis praesentium consequuntur assumenda doloremque ut labore autem molestiae. Omnis quia, est autem odio eius fugiat beatae ullam eum. Laborum, ipsum, nisi in optio laboriosam cumque libero tempore ipsa, temporibus ea eligendi excepturi delectus ab quaerat necessitatibus praesentium unde. Est molestiae earum vel eius omnis voluptatem aliquam! Corrupti a id cumque ipsam facere. Nostrum cum aliquid, similique doloremque harum saepe veniam sunt? Doloremque et mollitia beatae exercitationem! Provident numquam laborum ex velit laboriosam ullam, quidem atque obcaecati necessitatibus nulla, cum culpa veritatis minus. Praesentium laborum sit illum totam dolore? Consequuntur voluptates exercitationem obcaecati libero? Aspernatur quos ipsa soluta, voluptates iure ipsam! Repudiandae modi, consectetur vitae eius provident maiores recusandae! Facere animi eveniet iste inventore earum magnam perferendis suscipit assumenda laborum. Rerum quisquam minima aliquam ab numquam fugiat commodi quasi repudiandae qui aliquid! Nam nostrum expedita possimus at excepturi distinctio ratione blanditiis, ipsam natus odit, sunt doloribus eos repellendus voluptate culpa aperiam repudiandae assumenda molestias molestiae qui! Earum rerum possimus unde ex similique doloremque dolores praesentium laborum cupiditate distinctio modi odio minus vero voluptates, deleniti excepturi dolorem voluptatem libero fugit optio veritatis asperiores tempora! Nam ab totam ut enim exercitationem, quia suscipit, nesciunt nemo aliquam esse repudiandae iste, quibusdam harum. Nulla velit veritatis reiciendis veniam optio enim earum inventore sunt, voluptatem facilis error quia ex delectus? Non amet eius dolorem. Officiis, nulla. Placeat facere quod dolore tenetur autem aut molestias veritatis! Laborum at ex ipsa tempore eius asperiores enim? Repellat corrupti ut et harum enim eius facere at, sed provident, minima quod, veritatis rerum. Totam perferendis, iste voluptates quae eligendi quaerat dicta nihil deleniti quod modi ex, neque libero eos, nisi unde aperiam doloremque. Incidunt amet ullam, nostrum recusandae animi commodi quaerat ut quis autem maiores cumque explicabo est dolor quos aspernatur facere placeat. Cumque quos veritatis natus nostrum, eveniet eum, dolorum consectetur itaque dolores, in saepe amet? Aperiam, dolor. Suscipit quia vero dolorum exercitationem quaerat unde perferendis eveniet veritatis, incidunt similique ut harum nisi quod saepe consequuntur, fuga vel voluptas accusamus numquam beatae maiores iusto non. Sint nobis, explicabo vitae quae omnis ullam nostrum tempora corporis non voluptas voluptate sed, impedit quis adipisci dicta, officia alias autem laudantium. Iusto, unde! Cumque neque fuga, nam ullam eveniet nisi corporis maxime in eaque quae. Delectus officia quis illum minus sequi nulla quasi sint impedit! Exercitationem alias ea assumenda? Fugit, sequi ipsa. Itaque est at sit dicta quaerat non aliquid modi. Optio voluptatem tempore laboriosam, magnam officia facere deserunt molestias exercitationem nam veritatis reiciendis accusantium! Sequi, at. Tempora possimus vitae dolores cumque nemo illo esse, ea minima temporibus commodi tenetur pariatur quo? Rem a exercitationem aperiam quas deleniti, provident asperiores veniam beatae eligendi voluptatum distinctio omnis totam voluptates iure optio aliquam alias, corrupti dicta odit accusantium fugit quidem. Accusantium minima unde eligendi. Laboriosam excepturi incidunt quod delectus expedita officiis error enim reprehenderit? Error non enim eaque consequatur.
+
+    </p>
+    <script>
+        // let white = document.getElementById("white")
+        // let aqua = document.getElementById("aqua");
+        // let voilet = document.getElementById("voilet");
+        // let black = document.getElementById("black");
+        function changeBG(n){
+            document.body.style.backgroundColor = n ;
+            let x = document.getElementsByClassName("para");
+            if(n=="#000000"){
+            for(let i of x){
+                i.style.color = "white";
+            }
+            }else{
+                for(let i of x){
+                i.style.color = "black";
+            }
+        }
+        }
+    </script>
+</body>
+</html>
